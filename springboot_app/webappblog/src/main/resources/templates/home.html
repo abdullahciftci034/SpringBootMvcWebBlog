@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<title>Insert title here</title>
+</head>
+<body>
+  <p th:text="'Hello, ' + ${name} + '!'"></p>
+   <div th:insert="Layout/NavBarLayout:: navbar"></div>
+   <div th:insert="Layout/NavBarLayout:: selam"></div>
+    <div th:yield="content"></div>
+    	 <ul>
+        <li th:each="user : ${users}" th:text="${user.name}"></li>
+        <li th:each="user : ${users}" th:text="${user.description}"></li>
+    </ul>
+    <ul th:each="prod: ${users}">
+      <li th:text="${prod.name} + ${prod.description}" >Oranges</li>
+     
+    </ul>
+    <input <input type="text" name="userName" value="James Carrot" th:value="${name}" />
+   
+</body>
+</html>

@@ -1,0 +1,176 @@
+.logins.signin {
+  background-color: #d3d3d3;
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+.logins{
+  color:black;
+}
+.logins.login {
+  position: relative;
+  height: 420px;
+  width: 303px;
+  margin: auto;
+  padding: 60px 60px;
+  background: url(https://picsum.photos/id/1004/5616/3744) no-repeat   center center #eee;   
+  background-size: cover;
+  box-shadow: 0px 30px 60px -5px #3a3937;
+}
+
+form.logins {
+  padding-top: 80px;
+}
+
+.logins.active {
+  border-bottom: 2px solid #1161ed;
+  color: black;
+}
+
+.logins.nonactive {
+  color: black;
+}
+
+h2.logins {
+  padding-left: 12px;
+  font-size: 22px;
+  text-transform: uppercase;
+  padding-bottom: 5px;
+  letter-spacing: 2px;
+  display: inline-block;
+  font-weight: 100;
+}
+
+h2.logins:first-child {
+  padding-left: 0px;
+}
+
+span.logins {
+  text-transform: uppercase;
+  font-size: 12px; 
+  display: inline-block;
+  position: relative;
+  top: -65px;
+  transition: all 0.5s ease-in-out;
+}
+
+.text.logins {
+  border: none;
+  width: 89%;
+  padding: 10px 20px;
+  display: block;
+  height: 15px;
+  border-radius: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 2px solid black;
+  overflow: hidden;
+  margin-top: 15px;
+  transition: all 0.5s ease-in-out;
+}
+
+.text.logins:focus {
+  outline: 0;
+  border: 2px solid black;
+  border-radius: 20px;
+  background: rgba(0, 0, 0, 0);
+}
+
+.text.logins:focus + span {
+  opacity: 0.6;
+}
+
+input.logins[type="text"],
+input.logins[type="password"] {
+  font-family: 'Montserrat', sans-serif;
+  color: black;
+}
+
+
+
+input.logins {
+  display: inline-block;
+  padding-top: 20px;
+  font-size: 14px;
+}
+
+h2.logins,
+span.logins,
+.custom-checkbox.logins {
+  margin-left: 20px;
+}
+
+.custom-checkbox.logins {
+  -webkit-appearance: none;
+  background-color: rgba(255, 255, 255, 0.1);
+   border: 2px solid black;
+  padding: 8px;
+  border-radius: 2px;
+  display: inline-block;
+  position: relative;
+  top: 6px;
+}
+
+.custom-checkbox.logins:checked {
+  background-color: rgba(17, 97, 237, 1);
+}
+
+.custom-checkbox.logins:checked:after {
+ 
+  
+  content: '\2714';
+  font-size: 10px;
+  position: absolute;
+  top: 1px;
+  left: 4px;
+  color: black;
+}
+
+.custom-checkbox.logins:focus {
+  outline: none;
+}
+
+label.logins {
+  display: inline-block;
+  padding-top: 10px;
+  padding-left: 5px;
+}
+
+.signin.logins {
+  background-color: #1161ed;
+  color: black;
+  width: 100%;
+  padding: 10px 20px;
+  display: block;
+  height: 39px;
+  border-radius: 20px;
+  margin-top: 30px;
+  transition: all 0.5s ease-in-out;
+  border: none;
+  text-transform: uppercase;
+}
+
+.logins.signin:hover {
+  background: #4082f5;
+  box-shadow: 0px 4px 35px -5px #4082f5;
+  cursor: pointer;
+}
+
+.logins.signin:focus {
+  outline: none;
+}
+
+hr.logins {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  top: 85px;
+  position: relative;
+}
+
+a.logins {
+  text-align: center;
+  display: block;
+  top: 120px;
+  position: relative;
+  text-decoration: none;
+  color: black;
+}

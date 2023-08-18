@@ -1,0 +1,22 @@
+version: '3.3'
+services:
+  mysql_app:
+    build: ./mysql_app
+    environment:
+      MYSQL_ROOT_PASSWORD: abdullah123  # MySQL kök kullanıcısının şifresi
+      MYSQL_DATABASE: mydb  # Uygulamanın kullanacağı veritabanı adı
+    volumes:
+      - ./mysql_app/data:/var/lib/mysql  # MySQL veritabanı dosyalarının host ile konteyner arasında paylaşılacağı dizin
+    networks:
+      - my_network
+    ports:
+      - 3306:3306 
+  springboot_app:
+    build: ./springboot_app
+    ports:
+      - '8080:8080'
+    networks:
+      - my_network
+networks:
+  my_network:  # Uygulama konteynerleri arasında bir ağ oluşturur
+    driver: bridge

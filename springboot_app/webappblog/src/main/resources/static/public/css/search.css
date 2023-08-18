@@ -1,0 +1,39 @@
+*{
+	 z-index: 0;
+}
+form.search {
+     width: 100%;
+    border-radius: 35%;
+}
+span.search_span{
+    width: 100%;
+    height: 100%;
+}
+input.search{
+    width: 100%;
+    padding: 4px;
+    font-size: 20px;
+    box-shadow: 2px 1px 1px black;
+}
+div.ekle {
+    border-radius: 3%;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    z-index: 1;
+    position: relative;
+}
+ul.ekle {
+    background-color: rgba(238, 240, 236, 0.466);
+    margin: 0px;
+    padding: 0px;
+}
+ul.ekle li{
+    width: 98%;
+    border-radius: 3%;
+    border: 1px solid rgba(177, 174, 174, 0.075);
+    min-height: 25px;
+    margin: 0px;
+    padding: 1px;
+    list-style: none;
+}
