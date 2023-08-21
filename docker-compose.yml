@@ -11,6 +11,8 @@ services:
       - my_network
     ports:
       - 3306:3306 
+    depends_on:
+      - springboot_app
   springboot_app:
     build: ./springboot_app
     ports:
